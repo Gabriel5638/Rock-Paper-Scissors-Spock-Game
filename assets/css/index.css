@@ -8,8 +8,8 @@
 
  body{
             font-family: Helvetica, sans-serif;
-            height: 100vh;
             background-image: url("../images/Game-room.jpg");
+            height: 100vh;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -17,6 +17,7 @@
             justify-content: center;
           
  }
+
  
  .header{
          font-weight: 400;
@@ -66,3 +67,23 @@
      80% {opacity: 0;}
      100% {opacity: 1;}
 }
+
+.parent {
+     position: relative;
+     height: 100px;
+ }
+ 
+ .rules-image {
+     background-color: #000;
+     opacity: 0.9;
+     height: 80vh;
+     width: 50vw;
+     position: absolute;
+     top: 10vh;
+     bottom: 10px;
+     transform: translateX(50%);
+     
+     
+ }
+
+ 
