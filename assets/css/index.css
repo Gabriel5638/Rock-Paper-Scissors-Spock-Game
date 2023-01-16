@@ -9,7 +9,7 @@
  body{
             font-family: Helvetica, sans-serif;
             height: 100vh;
-            background-image: url("../images/space.jpg");
+            background-image: url("../images/Game-room.jpg");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
@@ -24,6 +24,7 @@
          text-align: center;
          text-transform: uppercase;
          letter-spacing: 1px;
+         background-color: #000;
          color: #fff;
          text-shadow:
                 0 0 5px #fff,
