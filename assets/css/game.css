@@ -13,23 +13,38 @@
 
 .container{
     background-color: #fff;
+        margin: 0 auto;
         width:500px;
         max-width: 100%;
-        margin: 0 auto;
+       
 }
 
 header{
      border: 3px solid #000;
+     border-radius: 20px;
      display: flex;
      justify-content: space-between;
+     padding: 25px;
+
       
 }
 
  h1{
+    font-size: 3rem;
+    margin: 0;
     display: flex;
+    line-height: 0.9;
     flex-direction: column;
+    text-transform: uppercase;
  }
 
+ h4{
+     color: #000;
+ }
+
+  .score-container{
+                   background-color:#fff;
+ }
 
 
 .btn-circle {
