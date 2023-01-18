@@ -1,12 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
 *{
-    margin: 0%;
-    padding: 0%;
+   box-sizing: border-box;
 }
 
- body { background-color: #060116;
-     
+ body { 
+    background-color:#4a0d42;
+
+    font-family: 'Josefin-Sans', sans-serif;
+
+    min-height: 100vh;
 }
+
+.container{
+        width:500px;
+}
+
+
 
 .btn-circle {
     height: 200px;
@@ -15,4 +24,9 @@
          
 }
 
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
 
