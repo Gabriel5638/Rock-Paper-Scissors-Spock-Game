@@ -24,7 +24,8 @@ header{
      border-radius: 20px;
      display: flex;
      justify-content: space-between;
-     padding: 25px;
+     padding: 20px;
+     margin: 50px 0;
 
       
 }
@@ -59,6 +60,7 @@ header{
    .point-container p {
     margin: 0;
     font-size: 3rem;
+    font-weight: 700;
      margin: 0;
 }
    
@@ -67,6 +69,22 @@ header{
 
   .points{
          color:#a366ff ;
+  }
+
+  .btn-rules{
+         border: 2px solid #000;
+         border-radius: 10px;
+         background-color: #fff;
+         font-weight: 700;
+         font-size: 20px;
+         color: #000;
+         font-family: 'Josefin-Sans', sans-serif;
+         padding: 10px 25px;
+         position: fixed;
+         bottom: 30px;
+         right:30px;
+         letter-spacing: 2px;
+         text-transform: uppercase;
   }
 
 
