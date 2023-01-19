@@ -14,7 +14,7 @@
 .container{
     background-color: #fff;
         margin: 0 auto;
-        width:500px;
+        width: 600px;
         max-width: 100%;
        
 }
@@ -33,18 +33,41 @@ header{
     font-size: 3rem;
     margin: 0;
     display: flex;
-    line-height: 0.9;
     flex-direction: column;
+    line-height: 0.9;
     text-transform: uppercase;
  }
 
  h4{
-     color: #000;
+     color: #a366ff;
+     padding: 20px 40px;
+     text-align: center;
+     letter-spacing: 5px;
+     text-transform: uppercase;
+
  }
 
-  .score-container{
-                   background-color:#fff;
- }
+ 
+  .point-container {
+              background-color: #fff;
+              border-radius: 10px;
+              padding: 20px 40px;
+              text-align: center;
+
+
+  }
+   .point-container p {
+    margin: 0;
+    font-size: 3rem;
+     margin: 0;
+}
+   
+
+
+
+  .points{
+         color:#a366ff ;
+  }
 
 
 .btn-circle {
