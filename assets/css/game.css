@@ -4,7 +4,7 @@
 }
 
  body { 
-    background-color:#4a0d42;
+    background-color:#333333;
 
     font-family: 'Josefin-Sans', sans-serif;
 
@@ -16,6 +16,7 @@
         margin: 0 auto;
         width: 600px;
         max-width: 100%;
+        
        
 }
 
@@ -40,7 +41,8 @@ header{
  }
 
  h4{
-     color: #a366ff;
+     color: #000;
+     font-weight: 900;
      padding: 20px 40px;
      text-align: center;
      letter-spacing: 5px;
@@ -68,7 +70,8 @@ header{
 
 
   .points{
-         color:#a366ff ;
+         color:#000;
+         
   }
 
   .btn-rules{
@@ -95,10 +98,10 @@ header{
     height: 200px;
     width: 200px;
     border-radius: 50%;
-         
+    
 }
 .btn-circle .wrapper{
-                  height:120px;
+                  height: 120px;
                     width: 120px;
                     background-color: #fff;
                     display: inline-flex;
@@ -108,20 +111,25 @@ header{
 
 }
 
- .btn-rock{ background: #ed0707;
-
+ .btn-rock{ background-color: #267326;
+   
+               
  }
 
  .btn-paper{
+    background-color: #a6a6a6;
 
  }
  .btn-scissors{
+    background-color: #b30000;
 
  }
  .btn-lizard{
+    background-color: #e6e600;
 
  }
  .btn-spock{
-        
+    background-color: #a366ff;
+
  }
 
