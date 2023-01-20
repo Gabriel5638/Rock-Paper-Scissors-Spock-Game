@@ -97,6 +97,16 @@ header{
     border-radius: 50%;
          
 }
+.btn-circle .wrapper{
+                  height:120px;
+                    width: 120px;
+                    background-color: #fff;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+
+}
 
  .btn-rock{ background: #ed0707;
 
