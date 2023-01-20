@@ -88,16 +88,15 @@ header{
   }
 
 
+
+
 .btn-circle {
+    border: none;
     height: 200px;
     width: 200px;
     border-radius: 50%;
          
 }
 
-.btn{
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-}
+
 
