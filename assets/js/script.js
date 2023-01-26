@@ -41,7 +41,7 @@ function checkWinner() {
 
             {
               //user lost
-              updateScore(-1)
+              updateScore(-1);
             }
           )
 
