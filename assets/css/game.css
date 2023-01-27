@@ -40,6 +40,14 @@ header{
     text-transform: uppercase;
  }
 
+ h2{ font-size: 3rem;
+     margin: 0 0 30px;
+     line-height: 0.8;
+     text-transform: uppercase;
+
+
+ }
+
  h4{
      color: #000;
      font-weight: 900;
@@ -90,6 +98,30 @@ header{
          text-transform: uppercase;
   }
 
+
+  .btn{
+       border: 2px solid #fff;
+         border-radius: 10px;
+         background-color: #fff;
+         font-weight: 700;
+         font-size: 20px;
+         color: #000;
+         font-size: 20px;
+         font-family: inherit;
+         padding: 10px 25px;
+         letter-spacing: 2px;
+         text-transform: uppercase;
+  }
+
+   .choosing{
+
+         display: flex;
+         justify-content: center;
+         margin: auto;
+         align-items: center;
+         text-align: center;
+   }
+  
 
 
 
