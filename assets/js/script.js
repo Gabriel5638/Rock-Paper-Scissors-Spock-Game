@@ -21,30 +21,26 @@ function checkWinner() {
             //draw
          } 
          else if (
-                  userChoice === 'rock' && computerChoice === 'scissors'  ||
-                  userChoice === 'rock' && computerChoice === 'lizard'    ||
-                  userChoice === 'paper' && computerChoice ==='rock'      ||
-                  userChoice === 'paper' && computerChoice === 'spock'    ||
-                  userChoice === 'scissors' && computerChoice === 'paper'  ||
-                  userChoice === 'scissors' && computerChoice ==='lizard'  ||
-                  userChoice === 'lizard' && computerChoice === 'spock'    ||
-                  userChoice === 'lizard' && computerChoice === 'paper'   ||
-                  userChoice === 'spock' && computerChoice ==='rock'     ||
-                  userChoice === 'spock' && computerChoice === 'scissors' ) {
-                     //user won
+                  (userChoice === 'rock' && computerChoice === 'scissors')  ||
+                  (userChoice === 'rock' && computerChoice === 'lizard')    ||
+                  (userChoice === 'paper' && computerChoice ==='rock' )     ||
+                  (userChoice === 'paper' && computerChoice === 'spock')    ||
+                  (userChoice === 'scissors' && computerChoice === 'paper') ||
+                  (userChoice === 'scissors' && computerChoice ==='lizard') ||
+                  (userChoice === 'lizard' && computerChoice === 'spock' )  ||
+                  (userChoice === 'lizard' && computerChoice === 'paper')   ||
+                  (userChoice === 'spock' && computerChoice ==='rock')      ||
+                  (userChoice === 'spock' && computerChoice === 'scissors' ) 
+                  ) 
+                  {  //user won
                      updateScore(1);
-                  }
-          else(
 
-
-
-
-            {
+                  } else {
               //user lost
               updateScore(-1);
             }
-          )
-
+         }
+      
 
 
 
@@ -58,4 +54,4 @@ function updateScore(value) {
 function pickRandomChoice() {
     return choices[Math.floor(Math.random() * choices.length)]
     ;
-}
+   }
