@@ -32,6 +32,7 @@ header{
 }
 
  h1{
+   font-family: 'Josefin-Sans', sans-serif;
     font-size: 3rem;
     margin: 0;
     display: flex;
@@ -40,22 +41,28 @@ header{
     text-transform: uppercase;
  }
 
+
+ h2{ font-family: 'Josefin-Sans' ,sans-serif;
+   font-size: 3rem;
+   margin: 0 0 30px;
+   line-height: 0.8;
+   text-transform: uppercase;
+   color:	#FFD700 ;
+
+
+}
+
  h3{
-    font-size: 2rem;
+   font-family: 'Roboto', sans-serif;
+    font-size: 2.3rem;
     color: #fff;
     background: #000;
  }
 
- h2{ font-size: 3rem;
-     margin: 0 0 30px;
-     line-height: 0.8;
-     text-transform: uppercase;
-     color:	#FFD700 ;
-
-
- }
+ 
 
  h4{
+   font-family: 'Roboto', sans-serif;
      color: #000;
      font-weight: 900;
      padding: 20px 40px;
@@ -122,11 +129,18 @@ header{
 
    .choosing{
 
-         display: flex;
+         display: none;
          justify-content: center;
          margin: auto;
          align-items: center;
          text-align: center;
+   }
+
+   .choosing .btn-circle {
+      margin: 80px;
+      transform: scale(1.2);
+      
+
    }
   
 
@@ -137,9 +151,13 @@ header{
     height: 200px;
     width: 200px;
     border-radius: 50%;
+    cursor: pointer;
     
 }
 
+.btn-circle:focus{
+   outline: none;
+}
 .btn-circle:active{
 
    transform:scale(0.9);
