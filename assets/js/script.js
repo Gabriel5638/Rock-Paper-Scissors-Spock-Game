@@ -2,6 +2,7 @@ const buttons= document.querySelectorAll('.pick');
 const scoreEl = document.getElementById('points');
 const main = document.getElementById('main');
 const choosing = document.getElementById('choosing');
+const reset = document.getElementById('reset');
 
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 
@@ -15,6 +16,11 @@ buttons.forEach(button => {
      checkWinner();
     }); 
 });
+
+  reset.addEventListener('click', () => {
+   main.style.display = 'none';
+   choosing.style.display = 'flex';
+ });
 
 function checkWinner() {
          const computerChoice = pickRandomChoice();
@@ -44,8 +50,9 @@ function checkWinner() {
          }
 
          //show choosing | hide main
-         choosing.style.display = 'flex';
-         main.style.display = 'none';
+         main.style.display = 'flex';
+         choosing.style.display = 'none';
+         
        
       
 
