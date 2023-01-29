@@ -1,4 +1,4 @@
-const buttons= document.querySelectorAll('.btn-circle');
+const buttons= document.querySelectorAll('.pick');
 const scoreEl = document.getElementById('points');
 
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];

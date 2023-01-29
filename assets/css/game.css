@@ -40,10 +40,17 @@ header{
     text-transform: uppercase;
  }
 
+ h3{
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: underline;
+ }
+
  h2{ font-size: 3rem;
      margin: 0 0 30px;
      line-height: 0.8;
      text-transform: uppercase;
+     color:	#FFD700 ;
 
 
  }
@@ -132,6 +139,11 @@ header{
     border-radius: 50%;
     
 }
+
+.btn-circle:active{
+
+   transform:scale(0.9);
+}
 .btn-circle .wrapper{
                   height: 120px;
                     width: 120px;
@@ -144,24 +156,26 @@ header{
 }
 
  .btn-rock{ background-color: #267326;
-   
+   margin: 40px;
                
  }
 
  .btn-paper{
     background-color: #a6a6a6;
-
+    margin: 40px;
  }
  .btn-scissors{
     background-color: #b30000;
-
+    margin: 40px;
  }
  .btn-lizard{
-    background-color: #e6e600;
+    background-color:#F15CCB;
+    margin: 40px;
+    
 
  }
  .btn-spock{
     background-color: #a366ff;
-
+    margin: 80px;
  }
 
