@@ -1,5 +1,7 @@
 const buttons= document.querySelectorAll('.pick');
 const scoreEl = document.getElementById('points');
+const main = document.getElementById('main');
+const choosing = document.getElementById('choosing');
 
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 
