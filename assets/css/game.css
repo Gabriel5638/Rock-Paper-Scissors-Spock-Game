@@ -43,7 +43,7 @@ header{
  h3{
     font-size: 2rem;
     color: #fff;
-    text-decoration: underline;
+    background: #000;
  }
 
  h2{ font-size: 3rem;
