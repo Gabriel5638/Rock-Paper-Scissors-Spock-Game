@@ -42,6 +42,11 @@ function checkWinner() {
               updateScore(-1);
             }
          }
+
+         //show choosing | hide main
+         choosing.style.display = 'flex';
+         main.style.display = 'none';
+       
       
 
 
