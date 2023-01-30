@@ -26,7 +26,7 @@
     </header>
    
  
-    <main>
+    <main id="top">
         <button class="btn-circle btn-rock pick"
         data-choice= "rock">
         <span class ="wrapper">
@@ -63,10 +63,10 @@
         </button>
     </main>
   
-    <div class="choosing" id="choosing">
+    <div class="choosing" id="bottom">
         <div>
            <h3>You picked</h3>
-           <button class="btn-circle btn-rock "
+           <button class="btn-circle btn-rock" id="player_select"
            data-choice= "rock">
            <span class ="wrapper">
            <img src="./assets/images/rock.svg" alt="rock icon" />
@@ -75,11 +75,11 @@
         </div>
         <div>
             <h2>You <span id="win">Win</span></h2>
-            <button class="btn" id="reset">Play again</button>
+            <button class="btn" id="replay">Play again</button>
         </div>
         <div>
             <h3>Computer picked</h3>
-            <button class="btn-circle btn-scissors "
+            <button class="btn-circle btn-scissors" id="computer_select"
             data-choice="scissors">
            <span class="wrapper">
             <img src="./assets/images/scissors.svg" alt="scissors icon"/>

@@ -128,12 +128,13 @@ header{
   }
 
    .choosing{
-
-         display: none;
-         justify-content: center;
-         margin: auto;
-         align-items: center;
-         text-align: center;
+    display: none;
+    align-items: center;
+    justify-content:space-around;
+    text-align: center;
+    
+   
+   
    }
 
   
@@ -149,10 +150,12 @@ header{
     
 }
 
+
 .btn-circle:active{
 
    transform:scale(0.9);
 }
+
 .btn-circle .wrapper{
                   height: 120px;
                     width: 120px;

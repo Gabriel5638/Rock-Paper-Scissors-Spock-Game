@@ -1,27 +1,36 @@
 const buttons= document.querySelectorAll('.pick');
 const scoreEl = document.getElementById('points');
-const main = document.getElementById('main');
-const choosing = document.getElementById('choosing');
-const reset = document.getElementById('reset');
+const main = document.getElementById('top');
+const choosing = document.getElementById('bottom');
+const replay = document.getElementById('replay');
+const player_select = document.getElementById('player_select');
+const computer_select = document.getElementById('computer_select');
 
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 
 let points = 0;
 let userChoice = undefined;
 
-buttons.forEach(button => {
+ buttons.forEach(button => {
   button.addEventListener('click',() => {
      userChoice = button.getAttribute('data-choice');
+
+      // hide main and show choice
+      main.style.display = 'none'
+      choosing.style.display = 'flex'
 
      checkWinner();
     }); 
 });
 
-  reset.addEventListener('click', () => {
-   main.style.display = 'none';
-   choosing.style.display = 'flex';
- });
 
+ replay.addEventListener('click', () =>{  
+   // hide choice and show main
+   main.style.display = 'flex'
+   choosing.style.display = 'none'
+});
+
+ 
 function checkWinner() {
          const computerChoice = pickRandomChoice();
 
@@ -49,12 +58,8 @@ function checkWinner() {
             }
          }
 
-         //show choosing | hide main
-         main.style.display = 'flex';
-         choosing.style.display = 'none';
-         
        
-      
+        
 
 
 
@@ -68,4 +73,8 @@ function updateScore(value) {
 function pickRandomChoice() {
     return choices[Math.floor(Math.random() * choices.length)]
     ;
+   }
+
+   function updateSelection(choosing,selectionEl){
+      
    }
