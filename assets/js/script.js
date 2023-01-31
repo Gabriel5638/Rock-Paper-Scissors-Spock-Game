@@ -5,6 +5,7 @@ const choosing = document.getElementById('bottom');
 const replay = document.getElementById('replay');
 const player_select = document.getElementById('player_select');
 const computer_select = document.getElementById('computer_select');
+const win = document.getElementById('win')
 
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 
@@ -23,6 +24,12 @@ let userChoice = undefined;
     }); 
 });
 
+//change view
+ updateSelection( player_select, userChoice);
+ updateSelection(computer_select, computerChoice);
+
+
+
 
  replay.addEventListener('click', () =>{  
    // hide choice and show main
@@ -36,6 +43,7 @@ function checkWinner() {
 
          if (userChoice === computerChoice) {
             //draw
+            win.innerText = 'draw';
          } 
          else if (
                   (userChoice === 'rock' && computerChoice === 'scissors')  ||
@@ -50,10 +58,12 @@ function checkWinner() {
                   (userChoice === 'spock' && computerChoice === 'scissors' ) 
                   ) 
                   {  //user won
+                     win.innerText = 'win';
                      updateScore(1);
 
                   } else {
               //user lost
+              win.innerText = 'lose';
               updateScore(-1);
             }
          }
@@ -75,6 +85,16 @@ function pickRandomChoice() {
     ;
    }
 
-   function updateSelection(choosing,selectionEl){
-      
-   }
+   function updateSelection(selectionEl, choice){
+      selectionEl.classList.remove('btn-rock');
+      selectionEl.classList.remove('btn-paper');
+      selectionEl.classList.remove('btn-scissors');
+      selectionEl.classList.remove('btn-lizard');
+      selectionEl.classList.remove('btn-spock');
+       
+      const img = selectionEl.querySelector('img');
+      selectionEl.classList.add(`btn-${choice}`);
+      img.src ='./assets/images-${select}.svg';
+      img.alt = select;
+
+      }
