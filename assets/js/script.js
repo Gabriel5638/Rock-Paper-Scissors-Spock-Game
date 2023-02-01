@@ -1,7 +1,7 @@
 const buttons= document.querySelectorAll('.pick');
 const scoreEl = document.getElementById('points');
-const main = document.getElementById('top');
-const choosing = document.getElementById('bottom');
+const main = document.getElementById('main');
+const choosing = document.getElementById('choosing');
 const replay = document.getElementById('replay');
 const player_select = document.getElementById('player_select');
 const computer_select = document.getElementById('computer_select');
@@ -16,26 +16,19 @@ let userChoice = undefined;
   button.addEventListener('click',() => {
      userChoice = button.getAttribute('data-choice');
 
-      // hide main and show choice
-      main.style.display = 'none'
-      choosing.style.display = 'flex'
 
      checkWinner();
     }); 
 });
 
-//change view
- updateSelection( player_select, userChoice);
- updateSelection(computer_select, computerChoice);
 
-
-
-
- replay.addEventListener('click', () =>{  
-   // hide choice and show main
-   main.style.display = 'flex'
+replay.addEventListener('click', () => {
+ //show main hide choosing 
+   main.style.display = 'flex';
    choosing.style.display = 'none'
 });
+
+
 
  
 function checkWinner() {
@@ -66,11 +59,17 @@ function checkWinner() {
               win.innerText = 'lose';
               updateScore(-1);
             }
+
+            //show choosing hide main
+            main.style.display = 'none';
+            choosing.style.display = 'flex';
+
+
          }
 
-       
-        
-
+   
+ 
+ 
 
 
 
