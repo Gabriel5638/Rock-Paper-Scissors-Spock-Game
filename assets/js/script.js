@@ -3,7 +3,7 @@ const scoreEl = document.getElementById('points');
 const main = document.getElementById('main');
 const choosing = document.getElementById('choosing');
 const replay = document.getElementById('replay');
-const player_select = document.getElementById('player_select');
+const user_select = document.getElementById('user_select');
 const computer_select = document.getElementById('computer_select');
 const win = document.getElementById('win')
 
@@ -33,6 +33,11 @@ replay.addEventListener('click', () => {
  
 function checkWinner() {
          const computerChoice = pickRandomChoice();
+
+         //update choices
+
+         updateSelection(user_select, userChoice)
+         updateSelection(computer_select, computerChoice)
 
          if (userChoice === computerChoice) {
             //draw
@@ -80,10 +85,9 @@ function updateScore(value) {
 }
 
 function pickRandomChoice() {
-    return choices[Math.floor(Math.random() * choices.length)]
-    ;
+    return choices[Math.floor(Math.random() * choices.length)];
    }
-
+     // reset class
    function updateSelection(selectionEl, choice){
       selectionEl.classList.remove('btn-rock');
       selectionEl.classList.remove('btn-paper');
@@ -91,9 +95,10 @@ function pickRandomChoice() {
       selectionEl.classList.remove('btn-lizard');
       selectionEl.classList.remove('btn-spock');
        
+      //add image
       const img = selectionEl.querySelector('img');
       selectionEl.classList.add(`btn-${choice}`);
-      img.src ='./assets/images-${select}.svg';
-      img.alt = select;
+      img.src = `./images/icon-${choice}.svg`;
+      img.alt = choice;
 
       }
