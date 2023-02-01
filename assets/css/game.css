@@ -4,7 +4,7 @@
 }
 
  body { 
-    background-color:#333333;
+    background-color:#00394d;
 
     font-family: 'Josefin-Sans', sans-serif;
 
@@ -174,7 +174,7 @@ header{
  }
 
  .btn-paper{
-    background-color: #a6a6a6;
+    background-color: #e6ac00;
     margin: 40px;
  }
  .btn-scissors{

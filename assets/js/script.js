@@ -57,17 +57,18 @@ function checkWinner() {
                   ) 
                   {  //user won
                      win.innerText = 'win';
-                     updateScore(1);
+                     updateScore();
 
                   } else {
               //user lost
               win.innerText = 'lose';
-              updateScore(-1);
+              
             }
 
-            //show choosing hide main
+           { //show choosing hide main
             main.style.display = 'none';
             choosing.style.display = 'flex';
+           }
 
 
          }
@@ -78,8 +79,8 @@ function checkWinner() {
 
 
 
-function updateScore(value) {
-   points += value;
+function updateScore() {
+   points += 1;
 
    scoreEl.innerText = points;
 }
@@ -98,7 +99,7 @@ function pickRandomChoice() {
       //add image
       const img = selectionEl.querySelector('img');
       selectionEl.classList.add(`btn-${choice}`);
-      img.src = `./images/icon-${choice}.svg`;
+      img.src = `./assets/images-${choice}.svg`;
       img.alt = choice;
 
       }
