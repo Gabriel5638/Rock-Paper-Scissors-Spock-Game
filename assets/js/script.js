@@ -7,6 +7,19 @@ const user_select = document.getElementById('user_select');
 const computer_select = document.getElementById('computer_select');
 const win = document.getElementById('win')
 
+//animate buttons 
+const rockElement = document.querySelector('.btn-rock');
+rockElement.classList.add('bounceIn');
+const paperElement = document.querySelector('.btn-paper');
+paperElement.classList.add('bounceIn');
+const scissorsElement = document.querySelector('.btn-scissors');
+scissorsElement.classList.add('bounceIn');
+const lizardElement = document.querySelector('.btn-lizard');
+lizardElement.classList.add('bounceIn');
+const spockElement = document.querySelector('.btn-spock');
+spockElement.classList.add('bounceIn');
+
+
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 
 let points = 0;
@@ -103,3 +116,6 @@ function pickRandomChoice() {
       img.alt = choice;
 
       }
+
+
+
