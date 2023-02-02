@@ -4,7 +4,7 @@
 }
 
  body { 
-    background-color:#00394d;
+    background-color: #262626;
 
     font-family: 'Josefin-Sans', sans-serif;
 
@@ -33,6 +33,7 @@ header{
 
  h1{
    font-family: 'Josefin-Sans', sans-serif;
+   color:#03037c;
     font-size: 3rem;
     margin: 0;
     display: flex;
@@ -63,7 +64,8 @@ header{
 
  h4{
    font-family: 'Roboto', sans-serif;
-     color: #000;
+     color: #03037c;
+     font-size: 20px;
      font-weight: 900;
      padding: 20px 40px;
      text-align: center;
@@ -93,6 +95,7 @@ header{
 
   .points{
          color:#000;
+
          
   }
 
@@ -174,7 +177,7 @@ header{
  }
 
  .btn-paper{
-    background-color: #e6ac00;
+    background-color: #bfbfbf;
     margin: 40px;
  }
  .btn-scissors{
@@ -182,13 +185,13 @@ header{
     margin: 40px;
  }
  .btn-lizard{
-    background-color:#F15CCB;
+    background-color:  #ff751a;
     margin: 40px;
     
 
  }
  .btn-spock{
-    background-color: #a366ff;
+    background-color: #c44dff;
     margin: 40px;
  }
 
