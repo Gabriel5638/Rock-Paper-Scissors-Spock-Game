@@ -7,6 +7,11 @@ const user_select = document.getElementById('user_select');
 const computer_select = document.getElementById('computer_select');
 const win = document.getElementById('win')
 
+//modal buttons & functions
+const openBtn = document.getElementById('open');
+const closeBtn = document.getElementById('close');
+const modal = document.getElementById('modal');
+
 //animate buttons 
 const rockElement = document.querySelector('.btn-rock');
 rockElement.classList.add('bounceIn');
@@ -41,6 +46,14 @@ replay.addEventListener('click', () => {
    choosing.style.display = 'none'
 });
 
+openBtn.addEventListener('click', () => {
+      modal.style.display = 'flex';
+});
+
+
+closeBtn.addEventListener('click', () => {
+   modal.style.display = 'none';
+});
 
 
  
