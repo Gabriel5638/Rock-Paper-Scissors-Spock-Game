@@ -15,9 +15,9 @@
             background-position: center;
             align-items: center;
             justify-content: center;
+            overflow: hidden;
           
  }
-
  
  .header{
          font-weight: 400;
@@ -118,4 +118,3 @@
  }
  
 
- 
