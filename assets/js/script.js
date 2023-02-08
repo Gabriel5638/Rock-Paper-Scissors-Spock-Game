@@ -25,6 +25,8 @@ const spockElement = document.querySelector('.btn-spock');
 spockElement.classList.add('bounceIn');
 
 
+
+
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 
 let points = 0;
@@ -56,7 +58,6 @@ closeBtn.addEventListener('click', () => {
 });
 
 
- 
 function checkWinner() {
          const computerChoice = pickRandomChoice();
 
@@ -88,8 +89,6 @@ function checkWinner() {
                   } else {
               //user lost
               win.innerText = 'lose';
-
-              //add button animation here too
             }
 
            { //show choosing hide main
@@ -100,6 +99,7 @@ function checkWinner() {
 
          }
 
+       
    
  
  
@@ -110,6 +110,15 @@ function updateScore() {
    points += 1;
 
    scoreEl.innerText = points;
+
+    // Check if the score is equal to 6
+    if (points === 6) {
+      const deniroGif = document.createElement('img');
+      
+
+      // Append the gif to the page
+      main.appendChild(deniroGif);
+   }
 }
 
 function pickRandomChoice() {

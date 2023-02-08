@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
 @import 'bouncing_entrances/bounceIn.css';
-@import 'specials/animate__hinge.css';
 
 * {
   box-sizing: border-box;
@@ -311,4 +310,3 @@ p2 {
   }
 }
 
-.animate
