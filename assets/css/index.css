@@ -51,7 +51,7 @@
          font-family: Roboto,sans-serif;
          text-align: center;
          width: 250px;
-         padding: 40px;
+         padding: 30px;
          font-size: 30px;
          color: #cb2dbe;
          border: 5px solid #cb2dbe;
@@ -59,7 +59,7 @@
          cursor: pointer;
          border-radius: 100px;
          transition: 1.5s;
-         margin-bottom: 35px;
+         margin-bottom: 70px;
 
  }
  .button:hover
