@@ -88,7 +88,8 @@ function checkWinner() {
                   } else {
               //user lost
               win.innerText = 'lose';
-              
+
+              //add button animation here too
             }
 
            { //show choosing hide main
