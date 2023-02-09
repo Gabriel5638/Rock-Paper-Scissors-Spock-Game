@@ -111,13 +111,15 @@ function updateScore() {
 
    scoreEl.innerText = points;
 
-    // Check if the score is equal to 6
-    if (points === 6) {
-      const deniroGif = document.createElement('img');
-      
-
-      // Append the gif to the page
-      main.appendChild(deniroGif);
+   if (points === 2) {
+      Swal.fire({
+         title: 'Congratulations!',
+  text: 'Modal with a custom image.',
+  imageUrl:  './assets/images/applause.gif',
+  imageWidth: 300,
+  imageHeight: 300,
+  imageAlt: 'applause',
+      });
    }
 }
 
