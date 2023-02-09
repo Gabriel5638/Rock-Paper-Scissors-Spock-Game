@@ -100,28 +100,33 @@ function checkWinner() {
          }
 
        
-   
+    var gifs = ['./assets/gifs/heads.gif', './assets/gifs/lean.gif', './assets/gifs/nod.gif','./assets/gifs/picard.gif'];
+    var currentGifIndex = 0;
+         
+        function updateScore() {
+            points += 1;
+         
+            scoreEl.innerText = points;
+         
+            if (points === 2) {
+               Swal.fire({
+                  title: 'Congratulations!',
+                  text: 'You have won!',
+                  imageUrl: gifs['./assets/gifs'],
+                  imageWidth: 400,
+                  imageHeight: 200,
+                  imageAlt: 'Winning gif'
+               });
+               currentGifIndex = (currentGifIndex + 1) % gifs.length;
+            }
+         }
+         
  
  
 
 
 
-function updateScore() {
-   points += 1;
 
-   scoreEl.innerText = points;
-
-   if (points === 2) {
-      Swal.fire({
-         title: 'Congratulations!',
-  text: 'Modal with a custom image.',
-  imageUrl:  './assets/images/applause.gif',
-  imageWidth: 300,
-  imageHeight: 300,
-  imageAlt: 'applause',
-      });
-   }
-}
 
 function pickRandomChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
