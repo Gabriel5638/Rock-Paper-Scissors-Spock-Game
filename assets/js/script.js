@@ -110,7 +110,8 @@ function checkWinner() {
          
             scoreEl.innerText = points;
          
-            if (points === 2) {
+            if (points === 6) {
+               currentGifIndex = Math.floor(Math.random() * gifs.length);
                Swal.fire({
                   title: 'Congratulations!',
                   text: 'You beat the game!',
