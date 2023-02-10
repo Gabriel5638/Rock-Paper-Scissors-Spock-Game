@@ -100,10 +100,12 @@ function checkWinner() {
          }
 
        
-    var gifs = ['./assets/gifs/heads.gif', './assets/gifs/lean.gif', './assets/gifs/nod.gif','./assets/gifs/picard.gif'];
-    var currentGifIndex = 0;
+         var gifs = ['./assets/gifs/heads.gif', './assets/gifs/lean.gif', './assets/gifs/nod.gif','./assets/gifs/picard.gif','./assets/gifs/rain.gif',
+                      './assets/gifs/scream.gif', './assets/gifs/smile.gif', './assets/gifs/smirk.gif', 'assets/gifs/spock.gif', './assets/gifs/star.gif',
+                      './assets/gifs/toast.gif', './assets/gifs/yes.gif', './assets/gifs/zoe.gif'];
+         var currentGifIndex = 0;
          
-        function updateScore() {
+         function updateScore() {
             points += 1;
          
             scoreEl.innerText = points;
@@ -111,16 +113,17 @@ function checkWinner() {
             if (points === 2) {
                Swal.fire({
                   title: 'Congratulations!',
-                  text: 'You have won!',
-                  imageUrl: gifs['./assets/gifs'],
+                  text: 'You beat the game!',
+                  imageUrl: gifs[currentGifIndex],
                   imageWidth: 400,
                   imageHeight: 200,
                   imageAlt: 'Winning gif'
                });
                currentGifIndex = (currentGifIndex + 1) % gifs.length;
+               points = 0;
+               scoreEl.innerText = points;
             }
          }
-         
  
  
 
