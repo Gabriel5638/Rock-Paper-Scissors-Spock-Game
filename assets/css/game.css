@@ -93,6 +93,7 @@ h4 {
   font-size: 3rem;
   font-weight: 700;
   margin: 0;
+  text-decoration: none;
 }
 
 
@@ -100,6 +101,7 @@ h4 {
 
 .points {
   color: #000;
+
 
 
 }
