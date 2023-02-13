@@ -15,8 +15,10 @@ body{
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  cursor: url('../images/rocket.png'),auto; 
 }
 
+ 
 .container {
   background-color: #fff;
   margin: 0 auto;
