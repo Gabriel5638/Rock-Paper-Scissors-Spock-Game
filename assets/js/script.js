@@ -42,6 +42,58 @@ let userChoice = undefined;
 });
 
 
+//sounds
+
+const rockSound = new Audio('./assets/sounds/rock.mp3');
+const paperSound = new Audio('./assets/sounds/paper.mp3');
+const scissorsSound = new Audio('./assets/sounds/scissors.mp3');
+const lizardSound = new Audio('./assets/sounds/lizard.mp3');
+const spockSound = new Audio('./assets/sounds/spock.mp3');
+
+buttons.forEach(button => {
+  button.addEventListener('click', function() {
+    const choice = this.dataset.choice;
+    
+    switch (choice) {
+      case 'rock':
+        rockSound.currentTime = 0;
+        rockSound.play();
+        break;
+      case 'paper':
+        paperSound.currentTime = 0;
+        paperSound.play();
+        break;
+      case 'scissors':
+        scissorsSound.currentTime = 0;
+        scissorsSound.play();
+        break;
+      case 'lizard':
+        lizardSound.currentTime = 0;
+        lizardSound.play();
+        break;
+      case 'spock':
+        spockSound.currentTime = 0;
+        spockSound.play();
+        break;
+      default:
+        break;
+    }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 replay.addEventListener('click', () => {
  //show main hide choosing 
    main.style.display = 'flex';
