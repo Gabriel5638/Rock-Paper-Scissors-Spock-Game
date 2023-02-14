@@ -42,7 +42,6 @@ let userChoice = undefined;
 });
 
 
-//sounds
 
 const rockSound = new Audio('./assets/sounds/rock.mp3');
 const paperSound = new Audio('./assets/sounds/paper.mp3');
@@ -80,16 +79,6 @@ buttons.forEach(button => {
     }
   });
 });
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -20,7 +20,7 @@ body{
 
  
 .container {
-  background-color: #fff;
+  background-color: #000;
   margin: 0 auto;
   width: 600px;
   max-width: 100%;
@@ -29,19 +29,20 @@ body{
 }
 
 header {
-  border: 3px solid #000;
-  border-radius: 20px;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  margin: 50px 0;
-
-
+   background-image: url('../background/space-two.jpeg');
+    border-radius: 20px;
+    display: flex;
+    padding: 20px;
+    margin: 50px 0;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
 
 h1 {
   font-family: 'Josefin-Sans', sans-serif;
-  color: #03037c;
+  color: #FFC0CB;
   font-size: 3rem;
   margin: 0;
   display: flex;
@@ -74,13 +75,15 @@ h3 {
 
 h4 {
   font-family: 'Roboto', sans-serif;
-  color: #03037c;
-  font-size: 20px;
+  color: #fff;
+  background-color: #000;
+  font-size: 25px;
   font-weight: 900;
   padding: 20px 40px;
   text-align: center;
   letter-spacing: 5px;
   text-transform: uppercase;
+  text-decoration: underline;
 
 
 
@@ -88,17 +91,15 @@ h4 {
 
 
 .point-container {
-  background-color: #fff;
   border-radius: 10px;
   padding: 20px 40px;
   text-align: center;
-
-
 }
 
 .point-container p {
+  color: #fff;
   margin: 0;
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 700;
   margin: 0;
   text-decoration: none;
@@ -151,14 +152,7 @@ h4 {
   align-items: center;
   justify-content: space-around;
   text-align: center;
-
-
-
 }
-
-
-
-
 
 
 .btn-circle {
@@ -166,7 +160,7 @@ h4 {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  cursor:grab;
+  cursor: pointer;
 
 }
 
