@@ -149,10 +149,16 @@ h4 {
 
 .choosing {
   display: none;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
+
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
 }
+
 
 
 .btn-circle {
@@ -315,3 +321,11 @@ p2 {
   }
 }
 
+/* media style ipad */
+@media(max-width: 900px) {
+
+  
+  .move-down{
+         order: 1;
+  }
+}
