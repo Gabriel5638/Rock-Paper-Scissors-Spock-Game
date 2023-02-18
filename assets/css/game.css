@@ -321,11 +321,12 @@ p2 {
   }
 }
 
+/* for phones only portrait */
  
    /* iphone 6,7,8 and other small screens */ 
 
 @media (max-width: 376px) and (min-height: 666px) {
-
+ 
   body{
     font-family: Roboto, sans-serif;
     background-image: url(../background/space.jpg);
@@ -337,8 +338,12 @@ p2 {
     cursor: url(../images/rocket.png),auto;
   }
 
+  .move-down{
 
+    order: 1;
+  }
 
+  
 
 h1 {
   font-family: 'Josefin-Sans', sans-serif;
@@ -363,7 +368,7 @@ h1 {
   border-radius: 10px;
   background-color: #fff;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 10px;
   color: #000;
   font-family: 'Josefin-Sans', sans-serif;
   padding: 10px 25px;
@@ -401,9 +406,10 @@ h1 {
     margin-left: 100px;
   }
 
-
+main{
+  display: list-item;
 }
-
+}
 
 /* iphone 12 */
 
@@ -420,7 +426,10 @@ h1 {
     overflow: scroll;
   }
 
+  .move-down{
 
+    order: 1;
+  }
 
 
 h1 {
@@ -502,7 +511,12 @@ h1 {
     }
   
   
-  
+    .move-down{
+
+      order: 1;
+    }
+
+
   
   h1 {
     font-family: 'Josefin-Sans', sans-serif;
@@ -567,7 +581,7 @@ h1 {
 
 }
 
-/* iphone xr and */
+/* iphone xr */
 @media (max-width: 415px) and (min-height: 895px){
 
   body{
@@ -579,6 +593,12 @@ h1 {
     background-position: center;
     overflow: scroll;
   
+  }
+
+
+  .move-down{
+
+    order: 1;
   }
 
 
@@ -648,10 +668,90 @@ h1 {
 }
 
 
+@media only screen and (max-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
+
+
+  body{
+    font-family: Roboto, sans-serif;
+    background-image: url(../background/space.jpg);
+    height: 300vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: scroll;
+  
+  }
+
+
+  .move-down{
+
+    order: 1;
+  }
 
 
 
+h1 {
+  font-family: 'Josefin-Sans', sans-serif;
+  color: #FFC0CB;
+  font-size: 1rem;
+  margin-left: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
 
+.point-container p {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-decoration: none;
+}
+
+
+.btn-rules {
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  font-family: 'Josefin-Sans', sans-serif;
+  padding: 10px 25px;
+  position: sticky;
+  bottom: 1px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+  .btn-rock {
+    background-color: #267326;
+    margin: 100px;
+  
+  }
+  
+  .btn-paper {
+    background-color: #bfbfbf;
+    margin: 100px;
+  }
+  
+  .btn-scissors {
+    background-color: #b30000;
+    margin: 100px;
+  }
+  
+  .btn-lizard {
+    background-color: #ff751a;
+    margin: 100px;
+  
+  
+  }
+  
+  .btn-spock {
+    background-color: #c44dff;
+    margin-left: 100px;
+  }
+
+}
 
 
 
