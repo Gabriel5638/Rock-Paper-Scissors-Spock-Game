@@ -321,17 +321,15 @@ p2 {
   }
 }
 
+ 
+   /* iphone 6,7,8 and other small screens */ 
 
-/* add landscape not supported messege for small screens */
-/* small screens  portrait */
-
-@media screen and (min-width: 319px) and (min-height: 665px) {
-
+@media (max-width: 376px) and (min-height: 666px) {
 
   body{
     font-family: Roboto, sans-serif;
     background-image: url(../background/space.jpg);
-    height: 263vh;
+    height: 339vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -371,136 +369,10 @@ h1 {
   padding: 10px 25px;
   position: sticky;
   bottom: 1px;
-  right: px;
   letter-spacing: 2px;
   text-transform: uppercase;
-
-
-}
 }
 
-/* mobile medium  portrait */
-
-
-@media screen and (min-width: 375px) and (max-height: 650px) {
-
-
-  body {
-    font-family: Roboto, sans-serif;
-    background-image: url(../background/space.jpg);
-    height: 265vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    align-items: center;
-    justify-content: center;
-    overflow: scroll;
-    cursor: url(../images/rocket.png),auto;
-  }
-h1{
-  font-family: 'Josefin-Sans', sans-serif;
-  color: #FFC0CB;
-  font-size: 1rem;
-  line-height: 1.4;
-  text-transform: uppercase;
-}
-
-
-.point-container p {
-  color: #fff;
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin: 0;
-  text-decoration: none;
-}
-
-
-.btn-rules {
-  border: 2px solid #000;
-  border-radius: 10px;
-  background-color: #fff;
-  font-weight: 700;
-  font-size: 20px;
-  color: #000;
-  font-family: 'Josefin-Sans', sans-serif;
-  padding: 10px 25px;
-  position: sticky;
-  bottom: 30px;
-  right: 30px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-
-}
-
-
-
-
-
-
-
-
-/* large mobile */
-
-@media screen and (max-width: 430px) and (max-height: 670px) {
-
-  body{
-    font-family: Roboto, sans-serif;
-    background-image: url(../background/space.jpg);
-    height: 268vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    overflow: scroll;
-    cursor: url(../images/rocket.png),auto;
-  }
-  
-  
-    h1 {
-      font-family: 'Josefin-Sans', sans-serif;
-      color: #FFC0CB;
-      font-size: 2rem;
-      margin-left: 5rem;
-      line-height: 1;
-      text-transform: uppercase;
-  
-  }
-  
-  .btn-rules {
-    border: 2px solid #000;
-    border-radius: 10px;
-    background-color: #fff;
-    font-weight: 700;
-    font-size: 20px;
-    color: #000;
-    font-family: 'Josefin-Sans', sans-serif;
-    padding: 10px 25px;
-    position: sticky;
-    bottom: 30px;
-    right: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  
-  }
-  
-  .btn-circle {
-    border: none;
-    height: 160px;
-    width: 160px;
-    border-radius: 50%;
-  }
-  
-  .btn-circle .wrapper {
-    height: 100px;
-    width: 100px;
-    background-color: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-  }
-  
   .btn-rock {
     background-color: #267326;
     margin: 100px;
@@ -528,9 +400,254 @@ h1{
     background-color: #c44dff;
     margin-left: 100px;
   }
+
+
+}
+
+
+/* iphone 12 */
+
+
+@media (max-width: 392px) and (min-height: 843px){
+
+  body{
+    font-family: Roboto, sans-serif;
+    background-image: url(../background/space.jpg);
+    height: 265vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: scroll;
+  }
+
+
+
+
+h1 {
+  font-family: 'Josefin-Sans', sans-serif;
+  color: #FFC0CB;
+  font-size: 1rem;
+  margin-left: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.point-container p {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-decoration: none;
+}
+
+
+.btn-rules {
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  font-family: 'Josefin-Sans', sans-serif;
+  padding: 10px 25px;
+  position: sticky;
+  bottom: 1px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+  .btn-rock {
+    background-color: #267326;
+    margin: 100px;
+  
+  }
+  
+  .btn-paper {
+    background-color: #bfbfbf;
+    margin: 100px;
+  }
+  
+  .btn-scissors {
+    background-color: #b30000;
+    margin: 100px;
+  }
+  
+  .btn-lizard {
+    background-color: #ff751a;
+    margin: 100px;
   
   
   }
+  
+  .btn-spock {
+    background-color: #c44dff;
+    margin-left: 100px;
+  }
+
+
+}
+
+
+/* pixel 5 */
+@media (max-width: 394px) and (min-height: 850px){
+
+    body{
+      font-family: Roboto, sans-serif;
+      background-image: url(../background/space.jpg);
+      height: 265vh;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      overflow: scroll;
+    }
+  
+  
+  
+  
+  h1 {
+    font-family: 'Josefin-Sans', sans-serif;
+    color: #FFC0CB;
+    font-size: 1rem;
+    margin-left: 3rem;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  
+  .point-container p {
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  
+  .btn-rules {
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Josefin-Sans', sans-serif;
+    padding: 10px 25px;
+    position: sticky;
+    bottom: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+    .btn-rock {
+      background-color: #267326;
+      margin: 100px;
+    
+    }
+    
+    .btn-paper {
+      background-color: #bfbfbf;
+      margin: 100px;
+    }
+    
+    .btn-scissors {
+      background-color: #b30000;
+      margin: 100px;
+    }
+    
+    .btn-lizard {
+      background-color: #ff751a;
+      margin: 100px;
+    
+    
+    }
+    
+    .btn-spock {
+      background-color: #c44dff;
+      margin-left: 100px;
+    }
+
+}
+
+/* iphone xr and */
+@media (max-width: 415px) and (min-height: 895px){
+
+  body{
+    font-family: Roboto, sans-serif;
+    background-image: url(../background/space.jpg);
+    height: 250vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: scroll;
+  
+  }
+
+
+
+
+h1 {
+  font-family: 'Josefin-Sans', sans-serif;
+  color: #FFC0CB;
+  font-size: 1rem;
+  margin-left: 3rem;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.point-container p {
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  text-decoration: none;
+}
+
+
+.btn-rules {
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  font-family: 'Josefin-Sans', sans-serif;
+  padding: 10px 25px;
+  position: sticky;
+  bottom: 1px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+  .btn-rock {
+    background-color: #267326;
+    margin: 100px;
+  
+  }
+  
+  .btn-paper {
+    background-color: #bfbfbf;
+    margin: 100px;
+  }
+  
+  .btn-scissors {
+    background-color: #b30000;
+    margin: 100px;
+  }
+  
+  .btn-lizard {
+    background-color: #ff751a;
+    margin: 100px;
+  
+  
+  }
+  
+  .btn-spock {
+    background-color: #c44dff;
+    margin-left: 100px;
+  }
+
+}
+
+
 
 
 
