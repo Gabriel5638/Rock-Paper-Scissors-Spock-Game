@@ -265,7 +265,7 @@ ol {
 
 }
 
-p2 {
+p:nth-child(2){
   font-family: 'Josefin-Sans', sans-serif;
   text-align: center;
   color: #000;
