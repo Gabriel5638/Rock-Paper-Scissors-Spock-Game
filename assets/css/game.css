@@ -581,7 +581,10 @@ h1 {
 
 }
 
-/* iphone xr */
+
+
+
+
 @media (max-width: 415px) and (min-height: 895px){
 
   body{
@@ -646,6 +649,7 @@ h1 {
   .btn-paper {
     background-color: #bfbfbf;
     margin: 100px;
+  
   }
   
   .btn-scissors {
@@ -667,6 +671,7 @@ h1 {
 
 }
 
+/* w /*
 
 @media only screen and (max-device-width: 414px) and (max-device-height: 896px) and (-webkit-device-pixel-ratio: 3) {
 
@@ -753,6 +758,19 @@ h1 {
 
 }
 
+*/
 
 
+
+/* landscape */
+
+@media(max-width: 900px){
+.move-down{
+   order: 1;
+}
+
+
+
+
+}
 
