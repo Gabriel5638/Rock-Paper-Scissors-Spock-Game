@@ -5,7 +5,7 @@ const choosing = document.getElementById('choosing');
 const replay = document.getElementById('replay');
 const user_select = document.getElementById('user_select');
 const computer_select = document.getElementById('computer_select');
-const win = document.getElementById('win')
+const win = document.getElementById('win');
 
 //modal buttons & functions
 const openBtn = document.getElementById('open');
