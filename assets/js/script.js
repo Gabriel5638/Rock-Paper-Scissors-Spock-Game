@@ -24,7 +24,8 @@ lizardElement.classList.add('bounceIn');
 const spockElement = document.querySelector('.btn-spock');
 spockElement.classList.add('bounceIn');
 
-
+//swal library
+const Swal = ('sweetalert2');
 
 
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
