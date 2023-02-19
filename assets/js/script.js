@@ -152,18 +152,18 @@ function checkWinner() {
             scoreEl.innerText = points;
          
             if (points === 6) {
-               currentGifIndex = Math.floor(Math.random() * gifs.length);
-               Swal.fire({
-                  title: 'Congratulations!',
-                  text: 'You beat the game!',
-                  imageUrl: gifs[currentGifIndex],
-                  imageWidth: 400,
-                  imageHeight: 200,
-                  imageAlt: 'Winning gif'
-               });
-               currentGifIndex = (currentGifIndex + 1) % gifs.length;
-               points = 0;
-               scoreEl.innerText = points;
+              currentGifIndex = Math.floor(Math.random() * gifs.length);
+              Swal.fire({
+                title: 'Congratulations!',
+                text: 'You beat the game!',
+                imageUrl: gifs[currentGifIndex],
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Winning gif'
+              });
+              currentGifIndex = (currentGifIndex + 1) % gifs.length;
+              points = 0;
+              scoreEl.innerText = points;
             }
          }
  
