@@ -30,7 +30,7 @@ spockElement.classList.add('bounceIn');
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 
 let points = 0;
-let userChoice = undefined;
+let userChoice;
 
  buttons.forEach(button => {
   button.addEventListener('click',() => {
@@ -86,7 +86,7 @@ buttons.forEach(button => {
 replay.addEventListener('click', () => {
  //show main hide choosing 
    main.style.display = 'flex';
-   choosing.style.display = 'none'
+   choosing.style.display = 'none';
 });
 
 openBtn.addEventListener('click', () => {
@@ -104,8 +104,8 @@ function checkWinner() {
 
          //update choices
 
-         updateSelection(user_select, userChoice)
-         updateSelection(computer_select, computerChoice)
+         updateSelection(user_select, userChoice);
+         updateSelection(computer_select, computerChoice);
 
          if (userChoice === computerChoice) {
             //draw

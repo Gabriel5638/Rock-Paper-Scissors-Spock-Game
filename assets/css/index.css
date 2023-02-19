@@ -105,7 +105,7 @@
 
     /*  galaxy fold screen */
 
-    @media only screen and (min-device-width: 653px) and (max-device-height: 280px) and (orientation: landscape) {
+    @media only screen and (min-width: 653px) and (max-height: 280px) and (orientation: landscape) {
 
      .rules-image{
         background-color: #000;
@@ -316,7 +316,7 @@
 
 
 /* nesthub */
-@media only screen and (min-device-width: 1024px) and (max-device-height: 600px) and (orientation: landscape) {
+@media only screen and (min-width: 1024px) and (max-height: 600px) and (orientation: landscape) {
 
 
     .rules-image {
