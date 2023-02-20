@@ -1,48 +1,49 @@
-body{
-    background-color:#dec1d2;
+body {
+    background-color: #dec1d2;
 
 }
 
-p{
+p {
     font-size: 18px;
     font-weight: 800;
     text-decoration: #000;
     text-decoration: solid;
- text-align: center;
- font-style: italic;
+    text-align: center;
+    font-style: italic;
 }
 
 
 
 .rules-container {
-      text-align: center;
-      padding-top: 20px;
-      font-size: 20px;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 20px;
 }
-ol{
+
+ol {
     list-style: none;
 }
 
-.buttons{
-       text-align: center;
-       font-size: 30px;
-       font-size: 50px;
+.buttons {
+    text-align: center;
+    font-size: 30px;
+    font-size: 50px;
 }
 
-.score-area{
-           text-align: center;
+.score-area {
+    text-align: center;
 }
 
-.user-score-label{
-       font-size: 50px;
-       text-decoration: solid;
-       color: #000;
+.user-score-label {
+    font-size: 50px;
+    text-decoration: solid;
+    color: #000;
 }
 
-.computer-score-label{
+.computer-score-label {
     font-size: 50px;
     text-decoration: solid;
     color: #000;
     padding-bottom: 10px;
-     
+
 }
