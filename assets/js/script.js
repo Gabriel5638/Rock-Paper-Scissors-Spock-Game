@@ -186,8 +186,8 @@ function pickRandomChoice() {
        
       //add image
       const img = selectionEl.querySelector('img');
-      selectionEl.classList.add(`btn-${choice}`);
-      img.src = `./assets/images/${choice}.svg`;
+      selectionEl.classList.add('btn-' + choice);
+      img.src = './assets/images/' + choice + '.svg';
       img.alt = choice;
 
       }
