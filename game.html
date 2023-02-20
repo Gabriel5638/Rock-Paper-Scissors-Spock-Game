@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="rock, paper, scissors, lizard, spock, game, space,">
     <link rel="stylesheet" href="assets/css/game.css">
-    <title>Game</title>
+    <title>RPSLS</title>
 </head>
 
-   
+
 
 <body>
     <div class="container">
@@ -27,73 +28,67 @@
             </div>
         </header>
     </div>
-   
- 
+
+
     <main id="main">
-        <button class="btn-circle btn-rock pick"
-        data-choice= "rock">
-        <span class ="wrapper">
-        <img src="./assets/images/rock.svg" alt="rock icon"/>
-        </span>
+        <button class="btn-circle btn-rock pick" data-choice="rock">
+            <span class="wrapper">
+                <img src="assets/images/rock.svg" alt="rock icon" />
+            </span>
         </button>
 
-        <button class="btn-circle btn-paper pick"
-         data-choice="paper">
-        <span class="wrapper">
-        <img src="./assets/images/paper.svg" alt="paper icon"/>
-        </span>
+        <button class="btn-circle btn-paper pick" data-choice="paper">
+            <span class="wrapper">
+                <img src="assets/images/paper.svg" alt="paper icon" />
+            </span>
         </button>
 
-        <button class="btn-circle btn-scissors pick"
-        data-choice="scissors">
-       <span class="wrapper">
-        <img src="./assets/images/scissors.svg" alt="scissors icon"/>
-        </span>
+        <button class="btn-circle btn-scissors pick" data-choice="scissors">
+            <span class="wrapper">
+                <img src="assets/images/scissors.svg" alt="scissors icon" />
+            </span>
         </button>
 
-        <button class="btn-circle btn-lizard pick"
-        data-choice="lizard">
-       <span class="wrapper">
-        <img src="./assets/images/lizard.svg" alt="lizard icon"/>
-        </span>
+        <button class="btn-circle btn-lizard pick" data-choice="lizard">
+            <span class="wrapper">
+                <img src="assets/images/lizard.svg" alt="lizard icon" />
+            </span>
         </button>
 
-        <button class="btn-circle btn-spock pick"
-        data-choice="spock">
-        <span class="wrapper">
-        <img src="./assets/images/spock.svg" alt="spock icon"/>
-        </span>
+        <button class="btn-circle btn-spock pick" data-choice="spock">
+            <span class="wrapper">
+                <img src="assets/images/spock.svg" alt="spock icon" />
+            </span>
         </button>
     </main>
-    <div class = "rules-modal" id="modal">
-     <p> The rules are as follows </p>
-     <ol>
-        <li>Scissors cuts Paper</li>
-        <li>Paper covers Rock</li>
-        <li>Rock crushes Lizard</li>
-        <li>Lizard poisons Spock</li>
-        <li>Spock smashes Scissors</li>
-        <li>Scissors decapitates Lizard</li>
-        <li>Lizard eats Paper</li>
-        <li>Paper disproves Spock</li>
-        <li>Spock vaporizes Rock</li>
-        <li>Rock crushes Scissors</li>
-      </ol>
+    <div class="rules-modal" id="modal">
+        <p> The rules are as follows </p>
+        <ol>
+            <li>Scissors cuts Paper</li>
+            <li>Paper covers Rock</li>
+            <li>Rock crushes Lizard</li>
+            <li>Lizard poisons Spock</li>
+            <li>Spock smashes Scissors</li>
+            <li>Scissors decapitates Lizard</li>
+            <li>Lizard eats Paper</li>
+            <li>Paper disproves Spock</li>
+            <li>Spock vaporizes Rock</li>
+            <li>Rock crushes Scissors</li>
+        </ol>
         <p> You beat the game after obtaining 6 points. Good Luck!</p>
         <button> <img src="assets/images/close.png" alt="close" id="close"></button>
     </div>
     <div> <button class="btn-rules" id="open">Rules</button>
     </div>
-  
+
     <div class="choosing" id="choosing">
         <div>
-           <h3>You picked</h3>
-           <button class="btn-circle btn-rock" id="user_select"
-           data-choice= "rock">
-           <span class ="wrapper">
-           <img src="./assets/images/rock.svg" alt="rock icon" />
-           </span>
-           </button>
+            <h3>You picked</h3>
+            <button class="btn-circle btn-rock" id="user_select" data-choice="rock">
+                <span class="wrapper">
+                    <img src="assets/images/rock.svg" alt="rock icon" />
+                </span>
+            </button>
         </div>
         <div class="move-down">
             <h2>You <span id="win">Win</span></h2>
@@ -101,24 +96,24 @@
         </div>
         <div>
             <h3>Computer picked</h3>
-            <button class="btn-circle btn-scissors" id="computer_select"
-            data-choice="scissors">
-           <span class="wrapper">
-            <img src="./assets/images/scissors.svg" alt="scissors icon"/>
-            </span>
+            <button class="btn-circle btn-scissors" id="computer_select" data-choice="scissors">
+                <span class="wrapper">
+                    <img src="assets/images/scissors.svg" alt="scissors icon" />
+                </span>
             </button>
         </div>
     </div>
 
     <div class="black-image">
         <button class="btn btn-mobile"><a href="mobile.html">mobile version</a></button>
-      </div>
-      
-   
- 
+    </div>
 
- <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
- <script src="./assets/js/script.js" defer></script>
+
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./assets/js/script.js" defer></script>
 </body>
+
 </html>
