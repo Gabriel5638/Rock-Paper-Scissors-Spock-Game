@@ -1,4 +1,4 @@
-// Define the game rules
+// Game rules
 const rules = {
     rock: ["scissors", "lizard"],
     paper: ["rock", "spock"],
@@ -7,41 +7,73 @@ const rules = {
     spock: ["rock", "scissors"]
   };
   
-  // Get the game buttons and score elements
+  // Game buttons and score elements
   const buttons = document.querySelectorAll(".game-btn");
-  const userScoreEl = document.getElementById("player-score");
+  const playerScoreEl = document.getElementById("player-score");
   const computerScoreEl = document.getElementById("computer-score");
-  const gameResultEl = document.getElementById("game-result");
+
+
   
-  let userScore = 0;
+  let playerScore = 0;
   let computerScore = 0;
+
+
+
   
-  // Define a function to update the score and check for game end
-  function updateScore(result) {
-    if (result === "win") {
-      userScore++;
-      if (userScore === 6) {
-        gameResultEl.textContent = "You win!";
-        disableButtons();
-      }
-    } else if (result === "lose") {
+  // Add win/loose gif 
+  var gifs = ['./assets/gifs/heads.gif', './assets/gifs/lean.gif', './assets/gifs/nod.gif','./assets/gifs/picard.gif','./assets/gifs/rain.gif',
+                        './assets/gifs/scream.gif', './assets/gifs/smile.gif', './assets/gifs/smirk.gif', 'assets/gifs/spock.gif', './assets/gifs/star.gif',
+                        './assets/gifs/toast.gif', './assets/gifs/yes.gif', './assets/gifs/zoe.gif'];
+  var currentGifIndex = 0;
+  
+  function updateScore(outcome) {
+    if (outcome === "win") {
+      playerScore++;
+      playerScoreEl.innerText = playerScore;
+    } else if (outcome === "lose") {
       computerScore++;
-      if (computerScore === 6) {
-        gameResultEl.textContent = "You lose!";
-        disableButtons();
-      }
+      computerScoreEl.innerText = computerScore;
     }
   
-    userScoreEl.textContent = userScore;
-    computerScoreEl.textContent = computerScore;
+    if (playerScore === 6) {
+      currentGifIndex = Math.floor(Math.random() * gifs.length);
+      Swal.fire({
+        title: 'Congratulations!',
+        text: 'You beat the game!',
+        imageUrl: gifs[currentGifIndex],
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'Winning gif'
+      });
+      currentGifIndex = (currentGifIndex + 1) % gifs.length;
+      playerScore = 0;
+      playerScoreEl.innerText = playerScore;
+      computerScore = 0;
+      computerScoreEl.innerText = computerScore;
+    } else if (computerScore === 6) {
+      currentGifIndex = Math.floor(Math.random() * gifs.length);
+      Swal.fire({
+        title: 'Game Over!',
+        text: 'Computer beat you!',
+        imageUrl: 'assets/images/lose.png',
+        imageWidth: 400,
+        imageHeight: 200,
+        imageAlt: 'image'
+      });
+      currentGifIndex = (currentGifIndex + 1) % gifs.length;
+      playerScore = 0;
+      playerScoreEl.innerText = playerScore;
+      computerScore = 0;
+      computerScoreEl.innerText = computerScore;
+    }
   }
   
-  // Define a function to check the game result
+  // Check game result
   function checkResult(userChoice) {
     // Generate a random computer choice
     const computerChoice = buttons[Math.floor(Math.random() * buttons.length)].dataset.type;
   
-    // Check the result
+    // Check the win/loss result
     if (userChoice === computerChoice) {
       return "draw";
     } else if (rules[userChoice].includes(computerChoice)) {
@@ -53,7 +85,7 @@ const rules = {
     }
   }
   
-  // Add event listeners to the game buttons
+  
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
       const result = checkResult(button.dataset.type);
@@ -77,11 +109,3 @@ const rules = {
       }
     });
   });
-  
-  // Disable game buttons
-  function disableButtons() {
-    buttons.forEach((button) => {
-      button.disabled = true;
-    });
-  }
-  

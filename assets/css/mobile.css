@@ -4,10 +4,12 @@ body{
 }
 
 p{
-    font-size: 20px;
-    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 800;
+    text-decoration: #000;
     text-decoration: solid;
  text-align: center;
+ font-style: italic;
 }
 
 
