@@ -4,22 +4,81 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="Description" content="Enter your description here"/>
+<meta name="" content="Enter your description here"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link rel="stylesheet" href="assets/css/mobile.css">
-<title>RPSLS MOBILE</title>
+<title>MOBILE</title>
 </head>
+
+
 <body>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+
+ <!--Game section-->
+ <div id="game-section">
+
+    <!--Score area-->
+    <div class="score-area">
+        <h2 class="user-score-label">Player: <span id="player-score">0</span></h2>
+        <h2 class="computer-score-label">Computer: <span id="computer-score">0</span></h2>
+    </div>
+
+<!-- buttons-->
+<div class="buttons">
+    <button data-type="rock" id="rock-btn" class="game-btn" aria-label=" Play rock">
+        <i class="fas fa-hand-rock"></i>
+    </button>
+    <button data-type="paper" id="paper-btn" class="game-btn" aria-label="Play paper">
+        <i class="far fa-hand-paper"></i>
+    </button>
+    <button data-type="scissors" id="scissors-btn" class="game-btn"
+        aria-label="Play scissors">
+        <i class="fas fa-hand-scissors"></i>
+    </button>
+    <button data-type="lizard" id="lizard-btn" class="game-btn" aria-label="Play lizard">
+        <i class="fas fa-hand-lizard"></i>
+    </button>
+    <button data-type="spock" id="spock-btn" class="game-btn" aria-label="Play spock">
+        <i class="fas fa-hand-spock"></i>
+    </button>
+</div>
+
+<!--rules-->
+    <div class=rules-container>
+        <ol>
+            <li><i class="fas fa-hand-scissors" aria-label="Scissors"></i> cuts <i
+                    class="far fa-hand-paper" aria-label="Paper"></i></li>
+            <li><i class="far fa-hand-paper" aria-label="Paper"></i> covers <i class="fas fa-hand-rock"
+                    aria-label="Rock"></i></li>
+            <li><i class="fas fa-hand-rock" aria-label="Rock"></i> crushes <i class="fas fa-hand-lizard"
+                    aria-label="Lizard"></i></li>
+            <li><i class="fas fa-hand-lizard" aria-label="Lizard"></i> poisons <i
+                    class="fas fa-hand-spock" aria-label="Spock"></i></li>
+            <li><i class="fas fa-hand-spock" aria-label="Spock"></i> smashes <i
+                    class="fas fa-hand-scissors" aria-label="Scissors"></i></li>
+            <li><i class="fas fa-hand-scissors" aria-label="Scissors"></i> decapitates <i
+                    class="fas fa-hand-lizard" aria-label="Lizard"></i></li>
+            <li><i class="fas fa-hand-lizard" aria-label="Lizard"></i> eats <i class="far fa-hand-paper"
+                    aria-label="Paper"></i></li>
+            <li><i class="far fa-hand-paper" aria-label="Paper"></i> disproves <i
+                    class="fas fa-hand-spock" aria-label="Spock"></i></li>
+            <li><i class="fas fa-hand-spock" aria-label="Spock"></i> vaporizes <i
+                    class="fas fa-hand-rock" aria-label="Rock"></i></li>
+            <li><i class="fas fa-hand-rock" aria-label="Rock"></i> crushes <i
+                    class="fas fa-hand-scissors" aria-label="Scissors"></i></li>
+            </ol>
+        <p>You beat the game when reaching 6 points, good luck.</p>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+<script src="./assets/js/mobile.js" defer></script>
 </body>
-
-
-
-
 
 
 </html>

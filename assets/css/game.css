@@ -265,10 +265,25 @@ ol {
   font-size: 40px;
   position: relative;
   top: -50px;
-
-
-
 }
+
+
+  
+.link {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+}
+
+.btn-mobile {
+  font-size: 12px;
+  padding: 5px 10px;
+}
+
+
+
+
 
 
 
@@ -407,6 +422,8 @@ h1 {
 main{
   display: list-item;
 }
+
+
 }
 
 
@@ -670,7 +687,8 @@ h1 {
     margin-left: 100px;
   }
 
-}
+ 
+  
 
 /* iphone 11 pro max */
 
