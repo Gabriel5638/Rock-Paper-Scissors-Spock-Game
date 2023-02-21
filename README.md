@@ -40,7 +40,6 @@ Visit the deployed website [here](https://gabriel5638.github.io/Rock-Paper-Sciss
     1. [Content](#content)
     2. [Media](#media)
     3. [Code](#code)
-8. [Acknowledgements](#acknowledgements)
 
 ***
 
@@ -187,10 +186,9 @@ Roboto and Josefin Sans were the fonts chosen, and by using them, the letters we
 
 * The [W3C Markup Validator](ht) and [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator/) services were used to validate all pages of the project in order to ensure there were no syntax errors.
 
-    - W3C Markup Validator returned a series of warnings concerning a possible misuse of aria-label. I considered this aria labels are being used to make available the icons in the rules popup available for the visually impaired.
-
-    -  W3C CSS Validator found no errors or warnings on my CSS.
+    - 
+    -  
 
 * The [JSHints JavaScript Code Quality Tool](https://jshint.com/) was used validate the site's JavaScript code.
 
-    - JSHints found no errors on the site's JavaScript code.
+    - 

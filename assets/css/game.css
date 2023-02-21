@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
 
 /* Import bouncing animation */
-@import 'bouncing_entrances/bounceIn.css';
+
 
 /* change box sizing to border-box */
 * {

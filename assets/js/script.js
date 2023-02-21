@@ -14,15 +14,15 @@ const modal = document.getElementById('modal');
 
 //animate buttons 
 const rockElement = document.querySelector('.btn-rock');
-rockElement.classList.add('bounceIn');
+rockElement.classList.add('animate__bounceIn');
 const paperElement = document.querySelector('.btn-paper');
-paperElement.classList.add('bounceIn');
+paperElement.classList.add('animate_bounceIn');
 const scissorsElement = document.querySelector('.btn-scissors');
-scissorsElement.classList.add('bounceIn');
+scissorsElement.classList.add('animate_bounceIn');
 const lizardElement = document.querySelector('.btn-lizard');
-lizardElement.classList.add('bounceIn');
+lizardElement.classList.add('animate_bounceIn');
 const spockElement = document.querySelector('.btn-spock');
-spockElement.classList.add('bounceIn');
+spockElement.classList.add('animate_bounceIn');
 
 
 
