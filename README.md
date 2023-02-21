@@ -118,7 +118,7 @@ Roboto and Josefin Sans were the fonts chosen, and by using them, the letters we
 
 ![spock gif](assets/readme-files/star-trek.gif)
 
- - GIFs were used for both the desktop and mobile versions. The GIFs are displayed when a player reaches 6 points on the desktop version, congratulating the winner and showing a funny GIF of the actors from Star Trek, including Spock himself. The GIFs appear at random, users gets a different one each time they win. This adds replayability to the game, so players can discover new GIFs with each playthrough.
+ - GIFs were used for both the desktop and mobile versions. The GIFs are displayed when a player reaches 6 points on the desktop version, congratulating the winner and showing a funny GIF of the actors from Star Trek, including Spock himself. The GIFs appear at random, user gets a different one each time they win. This adds replayability to the game, so players can discover new GIFs with each playthrough.
 
 
 ## Mobile Version
