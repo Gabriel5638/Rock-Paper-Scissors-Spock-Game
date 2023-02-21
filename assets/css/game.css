@@ -46,7 +46,7 @@ header {
 }
 
 /* Return button */
-.btn-link {
+.return {
   position: fixed;
    top: 0;
   left: 0;
