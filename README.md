@@ -90,7 +90,7 @@ Roboto and Josefin Sans were the fonts chosen, and by using them, the letters we
 * The website boasts two distinct versions, each outstanding in their own right and made to deliver a seamless user experience on both desktop and mobile platforms.
 
 * **Button**
-![button](assets/readme-files/neon-button.PNG)
+* ![button](assets/readme-files/neon-button.PNG)
 * The homepage features a thoughtfully designed neon-pink button, styled with precision using CSS, that illuminates upon hovering. The button offers a link to an engaging HTML-embedded game of RPSLS, inviting users to click and enjoy a captivating gaming experience.
 
 
