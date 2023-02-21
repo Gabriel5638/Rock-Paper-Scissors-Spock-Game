@@ -1,3 +1,4 @@
+//Add functions
 const buttons= document.querySelectorAll('.pick');
 const scoreEl = document.getElementById('points');
 const main = document.getElementById('main');
@@ -7,12 +8,12 @@ const user_select = document.getElementById('user_select');
 const computer_select = document.getElementById('computer_select');
 const win = document.getElementById('win');
 
-//modal buttons & functions
+//Add modal buttons & functions
 const openBtn = document.getElementById('open');
 const closeBtn = document.getElementById('close');
 const modal = document.getElementById('modal');
 
-//animate buttons 
+//Animate buttons 
 const rockElement = document.querySelector('.btn-rock');
 rockElement.classList.add('animate__bounceIn');
 const paperElement = document.querySelector('.btn-paper');
@@ -27,7 +28,7 @@ spockElement.classList.add('animate__bounceIn');
 
 
 
-
+// Rpsls choices and click listener
 const choices = ['rock', 'paper', 'scissors', 'lizard', 'spock'];
 
 let points = 0;
@@ -43,6 +44,7 @@ let userChoice;
 });
 
 
+// Audio and click event listener
 
 const rockSound = new Audio('./assets/sounds/rock.mp3');
 const paperSound = new Audio('./assets/sounds/paper.mp3');
@@ -85,7 +87,7 @@ buttons.forEach(button => {
 
 
 replay.addEventListener('click', () => {
- //show main hide choosing 
+ //Show main hide choosing 
    main.style.display = 'flex';
    choosing.style.display = 'none';
 });
@@ -103,13 +105,13 @@ closeBtn.addEventListener('click', () => {
 function checkWinner() {
          const computerChoice = pickRandomChoice();
 
-         //update choices
+         //Update choices
 
          updateSelection(user_select, userChoice);
          updateSelection(computer_select, computerChoice);
 
          if (userChoice === computerChoice) {
-            //draw
+            //Draw
             win.innerText = 'draw';
          } 
          else if (
@@ -124,16 +126,16 @@ function checkWinner() {
                   (userChoice === 'spock' && computerChoice ==='rock')      ||
                   (userChoice === 'spock' && computerChoice === 'scissors' ) 
                   ) 
-                  {  //user won
+                  {  //User won
                      win.innerText = 'win';
                      updateScore();
 
                   } else {
-              //user lost
+              //User lost
               win.innerText = 'lose';
             }
 
-           { //show choosing hide main
+           { //Show choosing hide main
             main.style.display = 'none';
             choosing.style.display = 'flex';
            }
@@ -141,7 +143,7 @@ function checkWinner() {
 
          }
 
-       
+         //Add gif Index
          var gifs = ['./assets/gifs/heads.gif', './assets/gifs/lean.gif', './assets/gifs/nod.gif','./assets/gifs/picard.gif','./assets/gifs/rain.gif',
                       './assets/gifs/scream.gif', './assets/gifs/smile.gif', './assets/gifs/smirk.gif', 'assets/gifs/spock.gif', './assets/gifs/star.gif',
                       './assets/gifs/toast.gif', './assets/gifs/yes.gif', './assets/gifs/zoe.gif'];
@@ -173,7 +175,7 @@ function checkWinner() {
 
 
 
-
+//Pick random button
 function pickRandomChoice() {
     return choices[Math.floor(Math.random() * choices.length)];
    }

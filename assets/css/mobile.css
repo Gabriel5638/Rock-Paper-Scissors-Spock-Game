@@ -1,8 +1,10 @@
+/* Style body*/
 body {
     background-color: #dec1d2;
 
 }
 
+/* Style text */
 p {
     font-size: 18px;
     font-weight: 800;
@@ -13,7 +15,7 @@ p {
 }
 
 
-
+/*Style rules container and list */
 .rules-container {
     text-align: center;
     padding-top: 20px;
@@ -24,12 +26,14 @@ ol {
     list-style: none;
 }
 
+/*Style rpsls buttons */
 .buttons {
     text-align: center;
     font-size: 30px;
     font-size: 50px;
 }
 
+/* Style score area */
 .score-area {
     text-align: center;
 }
