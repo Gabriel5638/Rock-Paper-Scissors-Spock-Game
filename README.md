@@ -1,108 +1,72 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock-Paper-Scissors-Lizard-Spock
+![responsive image](assets/readme-files/responsive.PNG)
 
-Welcome Gabriel Puiu,
+RPSLS is a modified version of the traditional Rock Paper Scissors game, which was introduced by Sam Kass and Karen Bryla. It gained popularity after being featured on the television series The Big Bang Theory. This website offers an entertaining way to play RPSLS against the computer. The game relies completely on luck, and the website is user-friendly, with clear sections for the game rules.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+There are two different versions available for playing RPSLS, one designed for mobile and another for desktop. Each version is tailored to its respective device, providing an optimal user experience. Whether playing on a mobile phone or a computer, users can enjoy the game of RPSLS with ease.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+Visit the deployed website [here](https://gabriel5638.github.io/Rock-Paper-Scissors-Spock-Game/)
 
-## Gitpod Reminders
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+## Table of Contents
 
-`python3 -m http.server`
+1. [User Experience (UX)](#user-experience-UX)
+    1. [Project Goals](#project-goals)
+    2. [User Stories](#user-stories)
+    3. [Images](#images)
+    4. [Typography](#fonts)
+2. [Features](#features)
+    1. [General](#general)
+    2. [Home Section](#home-section)
+    3. [Instructions Section](#instructions-section)
+    4. [Game section](#game-section)
+    5. [Result Section](#result-section)
+3. [Technologies Used](#technologies-used)
+    1. [Languages Used](#languages-used)
+    2. [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
+4. [Testing](#testing)
+    1. [Testing User Stories](#testing-user-stories)
+    2. [Code Validation](#code-validation)
+    3. [Accessibility](#accessibility)
+    4. [Tools Testing](#tools-testing)
+    5. [Manual Testing](#manual-testing)
+5. [Finished Product](#finished-product)
+6. [Deployment](#deployment)
+    1. [GitHub Pages](#github-pages)
+7. [Credits](#credits)
+    1. [Content](#content)
+    2. [Media](#media)
+    3. [Code](#code)
+8. [Acknowledgements](#acknowledgements)
 
-A blue button should appear to click: _Make Public_,
+***
 
-Another blue button should appear to click: _Open Browser_.
+### Project Goals
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+* Develop a website with a user-friendly structure and intuitive navigation for playing the Rock Paper Scissors Lizard Spock game.
+* Utilize engaging colors and interactive elements to enhance the user's gaming experience.
+* Ensure that the website's design is responsive, allowing the game to be played on various devices with ease.
+* Provide easy access to the game rules and controls to enhance the user's understanding of the game.
+* Enable the game to be played on different devices, making it accessible to a wider range of users.
 
-A blue button should appear to click: _Make Public_,
 
-Another blue button should appear to click: _Open Browser_.
+### User Stories
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+* As a player, I want the game's website to be easy to navigate.
 
-To log into the Heroku toolbelt CLI:
+* As a player, I would like the website to be aesthetically pleasing and engaging, making it enjoyable to play the game.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+* As a player, I want to have easy access to the game rules.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+* As a player, I want the game controls to be easy to access during the game.
 
-------
+* As a player, I want to be able to play the game on various devices.
 
-## Release History
+### Images
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+![rules](assets/readme-files/game.jpg)
+![rpsls](assets/readme-files/rpsls.png)
+![space](assets/readme-files/space.jpeg)
+* The website's visuals were carefully curated to align with the game's overarching theme of space and neon, inspired by the iconic Star Trek character, Spock. The selection of images sourced from the Pexels website showcases this theme and contributes to an immersive gaming experience that transports users into the game's world. Through the incorporation of these images, the website successfully captures the essence of the game's space-themed elements, offering users a visually engaging and memorable experience.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+![home page](assets/readme-files/home.png)
