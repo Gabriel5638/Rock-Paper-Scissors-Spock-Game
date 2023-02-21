@@ -16,13 +16,14 @@ const modal = document.getElementById('modal');
 const rockElement = document.querySelector('.btn-rock');
 rockElement.classList.add('animate__bounceIn');
 const paperElement = document.querySelector('.btn-paper');
-paperElement.classList.add('animate_bounceIn');
+paperElement.classList.add('animate__bounceIn');
 const scissorsElement = document.querySelector('.btn-scissors');
-scissorsElement.classList.add('animate_bounceIn');
+scissorsElement.classList.add('animate__bounceIn');
 const lizardElement = document.querySelector('.btn-lizard');
-lizardElement.classList.add('animate_bounceIn');
+lizardElement.classList.add('animate__bounceIn');
 const spockElement = document.querySelector('.btn-spock');
-spockElement.classList.add('animate_bounceIn');
+spockElement.classList.add('animate__bounceIn');
+
 
 
 
