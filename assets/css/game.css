@@ -297,20 +297,14 @@ ol {
 }
 
 
-/* style mobile button and link */
   
-.link {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  padding: 10px;
-}
-
-.mobile {
-  font-size: 12px;
-  padding: 5px 10px;
+/* Hide the black screen and mobile button by default */
+.black-image, .btn-mobile {
   display: none;
 }
+
+
+
 
 
 
@@ -372,24 +366,26 @@ ol {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
+    z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
   }
 
-  /* style black background and mobile button */
-  .black-image .btn-mobile {
+  /* Style the mobile button */
+  .btn-mobile {
+    display: block;
+    position: relative;
+    padding: 15px 25px;
+    border-radius: 50px;
     background-color: #fff;
     color: #000;
-    border: none;
-    font-size: 2rem;
+    font-size: 18px;
     font-weight: bold;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    display: flex;
+    text-transform: uppercase;
   }
 }
+
