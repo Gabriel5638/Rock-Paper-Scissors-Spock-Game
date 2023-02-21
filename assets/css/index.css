@@ -106,10 +106,15 @@
 
   .game-image {
       max-width: 70%; 
+
   }
 }
 
 @media only screen and (min-width: 653px) and (max-height: 280px) and (orientation: landscape) {
+  body{
+    overflow: scroll;
+
+  }
 
    .rules-image{
       background-color: #000;
@@ -147,6 +152,9 @@
   /* landscape for small screens */
   @media only screen and (min-width: 667px) and (max-height: 376px) and (orientation: landscape) {
 
+    body{
+        overflow: scroll;
+    }
 
     .rules-image{
         background-color: #000;
@@ -178,6 +186,9 @@
 
 /* iphone 11 pro */
   @media only screen and (min-width: 667px) and (max-height: 376px) and (orientation: landscape) {
+    body{
+      overflow: scroll;
+    }
     .rules-image {
       background-color: #000;
       opacity: 0.9;
@@ -216,6 +227,10 @@
 
   @media only screen and (min-width: 720px) and (max-height: 541px) and (orientation: landscape) {
 
+    body{
+       overflow:scroll;
+    }
+
     .rules-image {
         background-color: #000;
         opacity: 0.9;
@@ -253,6 +268,10 @@
 /* iphone 12 pro  landscape */
 
 @media only screen and (min-width: 843px) and (max-height: 391px) and (orientation: landscape) {
+
+  body{
+    overflow: scroll;
+  }
    
 
     .rules-image {
@@ -291,6 +310,9 @@
 /* landscape  pixel 5*/
 
 @media only screen and (min-width: 851px) and (max-height: 394px) and (orientation: landscape) {
+  body{
+    overflow: scroll;
+  }
 
     .rules-image {
         background-color: #000;
@@ -327,6 +349,9 @@
   /* iphone xr landscape */
 
   @media only screen and (min-width: 895px) and (max-height: 415px) and (orientation: landscape) {
+    body{
+      overflow: scroll;
+    }
 
     .rules-image {
         background-color: #000;
