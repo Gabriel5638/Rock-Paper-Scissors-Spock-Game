@@ -15,6 +15,7 @@ Visit the deployed website [here](https://gabriel5638.github.io/Rock-Paper-Sciss
     2. [User Stories](#user-stories)
     3. [Images](#images)
     4. [Typography](#fonts)
+    5. [Wireframes](#wireframes)
 2. [Features](#features)
     1. [General](#general)
     2. [Home Section](#home-section)
@@ -70,3 +71,28 @@ Visit the deployed website [here](https://gabriel5638.github.io/Rock-Paper-Sciss
 * The website's visuals were carefully curated to align with the game's overarching theme of space and neon, inspired by the iconic Star Trek character, Spock. The selection of images sourced from the Pexels website showcases this theme and contributes to an immersive gaming experience that transports users into the game's world. Through the incorporation of these images, the website successfully captures the essence of the game's space-themed elements, offering users a visually engaging and memorable experience.
 
 ![home page](assets/readme-files/home.png)
+
+* The selection of button colors, which comprise green, red, orange, purple, and grey, was carefully curated to ensure they would stand out amidst the dark background. These colors were intentionally chosen to complement the overall aesthetic of the game and create a visually engaging user experience that captures the essence of the game's theme.
+
+### Typography
+
+# fonts
+Roboto and Josefin Sans were the fonts chosen, and by using them, the letters were blockier, simpler to see, and more reminiscent of video games, particularly the Roboto font, which has a more cartoonish appearance.
+
+### Wireframes
+
+[Balsamiq](https://balsamiq.com/) has been used to design the main game screen. 
+
+![wireframe](assets/readme-files/wireframe.PNG)
+
+## Features
+
+* The website boasts two distinct versions, each outstanding in their own right and made to deliver a seamless user experience on both desktop and mobile platforms.
+
+* **Button**
+![button](assets/readme-files/neon-button.PNG)
+* The homepage features a thoughtfully designed neon-pink button, styled with precision using CSS, that illuminates upon hovering. The button offers a link to an engaging HTML-embedded game of RPSLS, inviting users to click and enjoy a captivating gaming experience.
+
+
+* ![score area](assets/readme-files/score.PNG)
+* The score area was designed to be easy to look at and intresting at the same time, it has the rock paper scissors spock logo and the holds the point count.
