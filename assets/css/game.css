@@ -1,13 +1,15 @@
 /* Import from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Roboto&display=swap');
 
-/* import bouncing animation */
+/* Import bouncing animation */
 @import 'bouncing_entrances/bounceIn.css';
 
+/* change box sizing to border-box */
 * {
   box-sizing: border-box;
 }
 
+/* Style body and cursor */
 body{
   font-family: Roboto, sans-serif;
   background-image: url("../background/space.jpg");
@@ -21,7 +23,7 @@ body{
   cursor: url('../images/rocket.png'),auto; 
 }
 
- 
+ /* style container */
 .container {
   background-color: #000;
   margin: 0 auto;
@@ -30,7 +32,7 @@ body{
 
 
 }
-
+/* style score section and add background image*/
 header {
    background-image: url('../background/space-two.jpeg');
     border-radius: 20px;
@@ -42,7 +44,7 @@ header {
     align-items: center;
 }
 
-
+/* Style rpsls text beside score */
 h1 {
   font-family: 'Josefin-Sans', sans-serif;
   color: #FFC0CB;
@@ -54,7 +56,7 @@ h1 {
   text-transform: uppercase;
 }
 
-
+/* Style winner looser draw text */
 h2 {
   font-family: 'Josefin-Sans', sans-serif;
   font-size: 3rem;
@@ -66,6 +68,7 @@ h2 {
 
 }
 
+/* Style you picked */
 h3 {
   font-family: 'Roboto', sans-serif;
   font-size: 2.3rem;
@@ -75,7 +78,7 @@ h3 {
 }
 
 
-
+/* Style score text */
 h4 {
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -92,6 +95,7 @@ h4 {
 
 }
 
+/* Style point container and points */
 
 .point-container {
   border-radius: 10px;
@@ -118,6 +122,7 @@ h4 {
 
 }
 
+/* Style button rules */
 .btn-rules {
   border: 2px solid #000;
   border-radius: 10px;
@@ -134,7 +139,7 @@ h4 {
   text-transform: uppercase;
 }
 
-
+/* Style button */
 .btn {
   border: 2px solid #fff;
   border-radius: 10px;
@@ -150,6 +155,7 @@ h4 {
   text-transform: uppercase;
 }
 
+/* Style choosing menu */
 .choosing {
   display: none;
   flex-wrap: wrap;
@@ -163,6 +169,8 @@ h4 {
 }
 
 
+
+/* Style rpsls buttons size colors and borders */
 
 .btn-circle {
   border: none;
@@ -219,6 +227,7 @@ h4 {
 }
 
 
+/* Styles rules modal and button */
 .rules-modal {
   background-color: #d9d9d9;
   overflow: scroll;
@@ -245,6 +254,7 @@ h4 {
 
 }
 
+/* style rules modal text */
 p {
   font-family: 'Josefin-Sans', sans-serif;
   text-align: center;
@@ -268,6 +278,7 @@ ol {
 }
 
 
+/* style mobile button and link */
   
 .link {
   position: fixed;
@@ -351,6 +362,7 @@ ol {
    
   }
 
+  /* style black background and mobile button */
   .black-image .btn-mobile {
     background-color: #fff;
     color: #000;
