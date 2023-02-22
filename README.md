@@ -28,11 +28,10 @@ Visit the deployed website [here](https://gabriel5638.github.io/Rock-Paper-Sciss
     1. [Languages Used](#languages-used)
     2. [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
 4. [Testing](#testing)
-    1. [Testing User Stories](#testing-user-stories)
-    2. [Code Validation](#code-validation)
-    3. [Accessibility](#accessibility)
-    4. [Tools Testing](#tools-testing)
-    5. [Manual Testing](#manual-testing)
+    1. [Code Validation](#code-validation)
+    2. [Accessibility](#accessibility)
+    3. [Tools Testing](#tools-testing)
+    4. [Manual Testing](#manual-testing)
 5. [Finished Product](#finished-product)
 6. [Deployment](#deployment)
     1. [GitHub Pages](#github-pages)
@@ -187,14 +186,83 @@ Roboto and Josefin Sans were the fonts chosen, and by using them, the letters we
 * The [W3C Markup Validator](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) services were used to validate all pages of the project in order to ensure there were no syntax errors.
 
     - The W3C Markup Validator found no errors or warnings in my HTML
-    ![wireframe](assets/readme-files/index-html.png)
-    ![wireframe](assets/readme-files/mobile-html.png)
+    ![index html](assets/readme-files/index-html.png)
+    ![mobile html](assets/readme-files/mobile-html.png)
+    ![game html](assets/readme-files/game%20html.png)
 
 
-    -  W3C CSS Validator found no errors or warnings on my CSS.
+
+ -  W3C CSS Validator found no errors or warnings on my CSS.
+     ![index css](assets/readme-files/index-css.png)
+    ![mobile css](assets/readme-files/mobile-css.png)
+    ![game css](assets/readme-files/game-css.png)
 
 * The [JSHints JavaScript Code Quality Tool](https://jshint.com/) was used validate the site's JavaScript code.
 
     - JSHints found no errors on the site's JavaScript code.
+    ![game js](assets/readme-files/game-js.png)
+    ![mobile js](assets/readme-files/mobile-js.png)
 
     
+* Lighthouse reports
+
+    - **index.html**
+
+    ![Lighthouse report for index page](assets/readme-files/index-lighthouse.png)
+
+    - **game.html**
+
+    ![Lighthouse report for game page](assets/readme-files/game-lighthouse.png)
+
+    
+    - **mobile.html**
+
+    ![Lighthouse report for mobile page](assets/readme-files/mobile-lighthouse.png)
+
+* Responsiveness
+
+    - [Am I Responsive?](http://ami.responsivedesign.is/#) was used to check responsiveness of the site pages across different devices.
+
+    - Chrome DevTools was used to test responsiveness in different screen sizes during the development process.
+
+    ## Deployment
+
+* This website was developed using [GitPod](https://www.gitpod.io/), which was then committed and pushed to GitHub using the GitPod terminal.
+
+### GitHub Pages
+
+* Here are the steps to deploy this website to GitHub Pages from its GitHub repository:
+
+    1. Log in to GitHub and locate the [GitHub Repository](https://github.com/).
+
+    2. At the top of the Repository, locate the Settings button on the menu.
+
+    3. Scroll down the Settings page until you locate the Pages section.
+
+    4. Under Source, click the dropdown called None and select Master Branch.
+
+    5. The page will refresh automatically and generate a link to your website.
+
+
+## Credits
+
+### Content
+
+* The instructions and rules were taken from the [Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock).
+
+### Media
+
+* 
+
+* T.
+
+* 
+### Code
+
+* [Stack Overflow](https://stackoverflow.com/), [CSS-Tricks](https://css-tricks.com/) and [W3Schools](https://www.w3schools.com/) were consulted on a regular basis for inspiration and sometimes to be able to better understand the code being implement.
+
+* The code for the carousel is a modified version of the CSS-Tricks code found [here](https://css-tricks.com/css-only-carousel/ ).
+
+* The code for the popups is a modified version of the W3Schools code found [here](https://www.w3schools.com/howto/howto_js_popup_form.asp).
+
+* The code to apply the full screen background was found at [CSS-Tricks](https://css-tricks.com/full-page-background-video-styles/).
