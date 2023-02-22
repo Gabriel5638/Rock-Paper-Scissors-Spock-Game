@@ -32,10 +32,9 @@ Visit the deployed website [here](https://gabriel5638.github.io/Rock-Paper-Sciss
     2. [Accessibility](#accessibility)
     3. [Tools Testing](#tools-testing)
     4. [Manual Testing](#manual-testing)
-5. [Finished Product](#finished-product)
-6. [Deployment](#deployment)
+5. [Deployment](#deployment)
     1. [GitHub Pages](#github-pages)
-7. [Credits](#credits)
+6. [Credits](#credits)
     1. [Content](#content)
     2. [Media](#media)
     3. [Code](#code)
@@ -252,17 +251,22 @@ Roboto and Josefin Sans were the fonts chosen, and by using them, the letters we
 
 ### Media
 
-* 
+* The rock paper scissors lizard spock buttons were taken from google images.
 
-* T.
+* The background images were taken from the pexels website.
 
-* 
+* Rules image was taken from google images.
+
+* All gifs were taken from gyphy website.
+
+* Sounds were taken from google and modified with mp3 cutter.
+
 ### Code
 
 * [Stack Overflow](https://stackoverflow.com/), [CSS-Tricks](https://css-tricks.com/) and [W3Schools](https://www.w3schools.com/) were consulted on a regular basis for inspiration and sometimes to be able to better understand the code being implement.
 
-* The code for the carousel is a modified version of the CSS-Tricks code found [here](https://css-tricks.com/css-only-carousel/ ).
+* The whole concept of the game HTML,CSS and JS was inspired by [this video](https://www.youtube.com/watch?v=HcppIYQLTxY).
 
-* The code for the popups is a modified version of the W3Schools code found [here](https://www.w3schools.com/howto/howto_js_popup_form.asp).
+* The mobile version was created with the help of font awesome and bootstrap. 
 
-* The code to apply the full screen background was found at [CSS-Tricks](https://css-tricks.com/full-page-background-video-styles/).
+* Used this video as inspiration for the index page neon button []()
