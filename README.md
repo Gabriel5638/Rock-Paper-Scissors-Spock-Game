@@ -10,11 +10,11 @@ Visit the deployed website [here](https://gabriel5638.github.io/Rock-Paper-Sciss
 
 ## Table of Contents
 
-1. [User Experience (UX)](#user-experience-UX)
+1. [User Experience](#user-experience)
     1. [Project Goals](#project-goals)
     2. [User Stories](#user-stories)
     3. [Images](#images)
-    4. [Typography](#fonts)
+    4. [Fonts](#fonts)
     5. [Wireframes](#wireframes)
 2. [Features](#features)
     1. [Play Button](#play-button)
@@ -29,9 +29,7 @@ Visit the deployed website [here](https://gabriel5638.github.io/Rock-Paper-Sciss
     2. [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
 4. [Testing](#testing)
     1. [Code Validation](#code-validation)
-    2. [Accessibility](#accessibility)
-    3. [Tools Testing](#tools-testing)
-    4. [Manual Testing](#manual-testing)
+    2. [Lighthouse Reports](#lighthouse-reports)
 5. [Deployment](#deployment)
     1. [GitHub Pages](#github-pages)
 6. [Credits](#credits)
@@ -39,7 +37,7 @@ Visit the deployed website [here](https://gabriel5638.github.io/Rock-Paper-Sciss
     2. [Media](#media)
     3. [Code](#code)
 
-***
+## User-Experience
 
 ### Project Goals
 
@@ -73,7 +71,7 @@ Visit the deployed website [here](https://gabriel5638.github.io/Rock-Paper-Sciss
 
 * The selection of button colors, which comprise green, red, orange, purple, and grey, was carefully curated to ensure they would stand out amidst the dark background. These colors were intentionally chosen to complement the overall aesthetic of the game and create a visually engaging user experience that captures the essence of the game's theme.
 
-### Typography
+### Fonts
 
 Roboto and Josefin Sans were the fonts chosen, and by using them, the letters were blockier, simpler to see, and more reminiscent of video games, particularly the Roboto font, which has a more cartoonish appearance.
 
@@ -203,7 +201,7 @@ Roboto and Josefin Sans were the fonts chosen, and by using them, the letters we
     ![mobile js](assets/readme-files/mobile-js.png)
 
     
-* Lighthouse reports
+## Lighthouse reports
 
     - **index.html**
 
@@ -269,4 +267,4 @@ Roboto and Josefin Sans were the fonts chosen, and by using them, the letters we
 
 * The mobile version was created with the help of font awesome and bootstrap. 
 
-* Used this video as inspiration for the index page neon button []()
+* Used this video as inspiration for the index page play button [link]( https://www.youtube.com/watch?v=ljOoD7mEMlg )
