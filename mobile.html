@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta name="keywords" content="rock, paper, scissors, lizard, spock, game, mobile,">
-<link rel="icon" type="image/png" href="assets/images/favicon.ico">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/css/mobile.css">
-<title>RPSLS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="rock, paper, scissors, lizard, spock, game, mobile,">
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/cosmo/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <title>RPSLS</title>
 </head>
 
 
 <body>
 
 
- <!--Game section-->
- <div id="game-section">
+    <!--Game section-->
+    <div id="game-section">
 
-    <!--Score area-->
-    <div class="score-area">
-        <h2 class="user-score-label">Player: <span id="player-score">0</span></h2>
-        <h2 class="computer-score-label">Computer: <span id="computer-score">0</span></h2>
-    </div>
+        <!--Score area-->
+        <div class="score-area">
+            <h2 class="user-score-label">Player: <span id="player-score">0</span></h2>
+            <h2 class="computer-score-label">Computer: <span id="computer-score">0</span></h2>
+        </div>
 
-<!-- buttons-->
-<div class="buttons">
-    <button data-type="rock" id="rock-btn" class="game-btn" aria-label=" Play rock">
-        <i class="fas fa-hand-rock"></i>
-    </button>
-    <button data-type="paper" id="paper-btn" class="game-btn" aria-label="Play paper">
-        <i class="far fa-hand-paper"></i>
-    </button>
-    <button data-type="scissors" id="scissors-btn" class="game-btn"
-        aria-label="Play scissors">
-        <i class="fas fa-hand-scissors"></i>
-    </button>
-    <button data-type="lizard" id="lizard-btn" class="game-btn" aria-label="Play lizard">
-        <i class="fas fa-hand-lizard"></i>
-    </button>
-    <button data-type="spock" id="spock-btn" class="game-btn" aria-label="Play spock">
-        <i class="fas fa-hand-spock"></i>
-    </button>
-</div>
+        <!-- buttons-->
+        <div class="buttons">
+            <button data-type="rock" id="rock-btn" class="game-btn" aria-label=" Play rock">
+                <i class="fas fa-hand-rock"></i>
+            </button>
+            <button data-type="paper" id="paper-btn" class="game-btn" aria-label="Play paper">
+                <i class="far fa-hand-paper"></i>
+            </button>
+            <button data-type="scissors" id="scissors-btn" class="game-btn" aria-label="Play scissors">
+                <i class="fas fa-hand-scissors"></i>
+            </button>
+            <button data-type="lizard" id="lizard-btn" class="game-btn" aria-label="Play lizard">
+                <i class="fas fa-hand-lizard"></i>
+            </button>
+            <button data-type="spock" id="spock-btn" class="game-btn" aria-label="Play spock">
+                <i class="fas fa-hand-spock"></i>
+            </button>
+        </div>
 
-<!--rules-->
-    <div class=rules-container>
-        <ol>
+        <!--rules-->
+        <div class=rules-container>
+            <ol>
                 <li>Scissors cuts Paper</li>
                 <li>Paper covers Rock</li>
                 <li>Rock crushes Lizard</li>
@@ -59,15 +59,16 @@
                 <li>Spock vaporizes Rock</li>
                 <li>Rock crushes Scissors</li>
             </ol>
-        <p>You beat the game when reaching 6 points, please note that if it's a draw nobody receives a point, making it seem like the buttons are not working.</p>
-</div>
+            <p>You beat the game when reaching 6 points, please note that if it's a draw nobody receives a point, making
+                it seem like the buttons are not working.</p>
+        </div>
 
-</div>
+    </div>
 
 
 
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="./assets/js/mobile.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./assets/js/mobile.js" defer></script>
 </body>
 
 
